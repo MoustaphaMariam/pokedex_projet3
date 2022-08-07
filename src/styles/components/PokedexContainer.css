@@ -1,0 +1,32 @@
+.PokedexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: auto;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+/* .PokedexContainer h1 {
+  background: linear-gradient(to right, #063985, #fbff05);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: system-ui;
+  font-size: 80px;
+} */
+
+p {
+  font-family: "Dank Mono", ui-monospace, monospace;
+}
+
+/*********************MEDIA QUERies********************************/
+
+@media (max-width: 490px) {
+  .PokedexContainer {
+    justify-content: space-around;
+    align-content: center;
+    width: 300px;
+    border: 1px solid red;
+  }
+}

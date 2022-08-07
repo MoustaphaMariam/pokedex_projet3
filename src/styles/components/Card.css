@@ -1,0 +1,92 @@
+.Card {
+  border: 1px solid silver;
+  width: 250px;
+  background-color: silver;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.Card img {
+  object-fit: contain;
+  width: 250px;
+  height: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.Card:hover img {
+  object-fit: contain;
+  width: 150px;
+  box-shadow: none;
+  transition: 0.5s;
+}
+.name {
+  text-align: center;
+  margin: auto;
+}
+
+.name h2 {
+  width: 200px;
+  color: rgb(21, 114, 102);
+  text-align: center;
+  font-size: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.menu ul li {
+  margin: auto;
+  padding: 5px;
+}
+
+.menu ul li a {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.menu ul li a:hover {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  transition: 0.2s;
+}
+
+.menu ul li .add {
+  color: green;
+}
+.menu ul li .remove {
+  color: red;
+}
+
+@media (min-width: 320px) {
+  form {
+    justify-content: center;
+  }
+}
+
+/*********************MEDIA QUERies********************************/
+
+@media (max-width: 490px) {
+  .card {
+    width: 250px;
+  }
+
+  .card img {
+    width: 250px;
+  }
+}

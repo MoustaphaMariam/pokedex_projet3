@@ -1,0 +1,23 @@
+@import url("http://fonts.cdnfonts.com/css/pokemon-solid");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap");
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "font-1", cursive;
+  background: url(/public/assets/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.max-width {
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: auto;
+  justify-content: center;
+}

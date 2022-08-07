@@ -1,0 +1,57 @@
+.Favorite {
+  border: 1px solid greenyellow;
+  position: relative;
+  width: 200px;
+  background-color: rgba(0, 128, 0, 0.61);
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.Favorite img {
+  object-fit: cover;
+  width: 180px;
+  margin: 15px 0 0 0;
+}
+
+.Favorite button {
+  position: absolute;
+  right: 0;
+  padding: 5px 15px;
+  border: 1px solid green;
+  border-radius: 10px;
+  display: none;
+}
+
+.Favorite .fa-trash-can {
+  color: rgba(255, 0, 0, 0.678);
+  font-size: 1.5em;
+  display: none;
+}
+.Favorite:hover .fa-trash-can {
+  display: block;
+}
+.Favorite:hover button {
+  display: block;
+}
+
+.Favorite p {
+  color: rgb(27, 25, 25);
+  font-size: 1.5em;
+  margin: -5px auto;
+  font-family: "Pokemon Solid", sans-serif;
+  padding: 0;
+}
+
+/*********************MEDIA QUERies********************************/
+
+@media (max-width: 490px) {
+  .Favorite {
+    width: 250px;
+  }
+
+  .Favorite img {
+    width: 250px;
+  }
+}
